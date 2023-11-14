@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Sofiaplus Clon</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofiaplus</title>
+</head>
+<body>
+  <header>
+    <img src="https://oferta.senasofiaplus.edu.co/sofia-oferta/images/logo.png" alt="Logo de Sofiaplus" aria-label="Logo de Sofiaplus">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#" aria-label="Página de inicio">Inicio</a></li>
+      <li><a href="#" aria-label="Buscar ofertas">Buscar oferta</a></li>
+      <li><a href="#" aria-label="Presentar pruebas de selección">Presentar pruebas de selección</a></li>
+      <li><a href="#" aria-label="Obtener certificados">Certificados</a></li>
+      <li><a href="#" aria-label="Ayuda y soporte">Ayuda y soporte</a></li>
+    </ul>
+  </nav>
+  
+  <div class="accessibility-bar">
+    <img id="contrast-btn" src="https://cdn-icons-png.flaticon.com/512/92/92484.png" alt="icono de contraste">
+  </div>
+  
+  <div id="modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-content">
+  <button id="closeButton" onclick="closeModal()" aria-label="Cerrar modal">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <a href="https://ibb.co/RBdg3bg">
+    <img src="https://portal.senasofiaplus.edu.co/emprendimiento/bannerOferta.jpg" alt="Vendedor sonriendo dentro de un banner ofreciendo formacion presencial" border="0">
+  </a>
+</div>
+
+  
+  <div class="greeting">
+    <div class="greeting__left">
+      <h1>BIENVENIDO A SOFIAPLUS</h1>
+      <p>EL PORTAL DE OFERTA EDUCATIVA DEL SENA</p>
+    </div>
+    <div class="greeting__right">
+      <div class="cronograma">
+        <div class="cronograma__left">
+          <a href="#" aria-label="Fechas de la convocatoria">Del 3 al 11 de noviembre de 2023</a>
+        </div>
+        <div class="cronograma__right">
+          <a href="#" aria-label="Cronograma de la convocatoria modalidad presencial y a distancia para 2024">Cronograma convocatoria modalidad presencial y a Distancia 2024</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ <div class="icons-container">
+  <div class="circle-label">
+    <div class="circle"></div>
+    <div class="label"><a href="#">Carreras presenciales</a></div>
+  </div>
+  <div class="circle-label">
+    <div class="circle"></div>
+    <div class="label"><a href="#">Carreras virtuales</a></div>
+  </div>
+  <div class="circle-label">
+    <div class="circle"></div>
+    <div class="label"><a href="#">Cursos cortos presenciales</a></div>
+  </div>
+  <div class="circle-label">
+    <div class="circle"></div>
+    <div class="label"><a href="#">Cursos cortos virtuales</a></div>
+  </div>
+  <div class="circle-label">
+    <div class="circle"></div>
+    <div class="label"><a href="#">Cursos de inglés</a></div>
+  </div>
+</div>
+  
+  <div class="forms-container">
+    <div class="search-container">
+      <label for="career">¿Qué le gustaría estudiar?</label>
+      <input id="career" type="text" placeholder="Ejemplo: Cocina, Contabilidad">
+      <div class="radio-container">
+        <div class="radio-option">
+          <label>
+            <input checked type="radio" name="choice" value="todo">
+            Todos los Tipos de Formación
+          </label>
+        </div>
+        <div class="radio-option">
+          <label>
+            <input type="radio" name="choice" value="carreras-tecnicas">
+            Carreras Técnicas
+          </label>
+        </div>
+
+        <div class="radio-option">
+          <label>
+            <input type="radio" name="choice" value="cursos-cortos">
+            Cursos Cortos
+          </label>
+        </div>
+
+        <div class="radio-option">
+          <label>
+            <input type="radio" name="choice" value="virtual">
+            Virtual
+          </label>
+        </div>
+
+        <div class="radio-option">
+          <label>
+            <input type="radio" name="choice" value="empresas">
+            Empresas
+          </label>
+        </div>
+      </div>
+      <label for="place">¿En donde le gustaría estudiar?</label>
+      <input id="place" type="text" placeholder="Ejemplo: Cali, Cartagena">
+      <div class="radio-container">
+        <div class="radio-option">
+          <label>
+            <input checked type="radio" name="choice2" value="todo">
+            Todos los programas
+          </label>
+        </div>
+        <div class="radio-option">
+          <label>
+            <input type="radio" name="choice2" value="disponible">
+            Solo programas con oferta disponible
+          </label>
+        </div>
+        <button>Buscar</button>
+    </div>
+  </div>
+    
+    <div class="access-container">
+      <div class="box">
+        <div class="box--header">
+          <span>Registrese</span> para inscribirse a los programas de formación
+        </div>
+        <div class="box--button"></div>
+      </div>
+      <div class="box">
+        <div class="box--header"></div>
+        <div class="box--button"></div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

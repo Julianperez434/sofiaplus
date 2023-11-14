@@ -1,0 +1,268 @@
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --main-color: #5EB319;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-size: 1rem;
+  font-family: Arial;
+  padding: 0 2em 0 2em;
+}
+
+nav ul {
+  list-style: none;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-around;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+nav ul li {
+  padding: 1em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+nav ul li:hover {
+  background-color: #469C00;
+}
+nav ul li a {
+  color: #FFFFFF;
+}
+
+.greeting {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.greeting__left {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: 0;
+}
+.greeting__left h1 {
+  color: #707070;
+  font-size: 1rem;
+}
+.greeting__left p {
+  color: #008293;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  width: 12em;
+}
+
+.cronograma {
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.4);
+}
+
+.cronograma__left {
+  background-color: var(--main-color);
+  display: flex;
+  text-align: center;
+  padding: 0.5em;
+  width: 7em;
+  font-size: 0.9rem;
+  transition: all 0.15s ease;
+  border-radius: 0.5em 0em 0em 0.5em;
+}
+.cronograma__left a {
+  color: #FFFFFF;
+}
+.cronograma__left:hover {
+  background-color: #469C00;
+}
+
+.cronograma__right {
+  background-color: #F5F5F5;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12em;
+  font-size: 0.9rem;
+  padding: 0em 2em;
+  margin-left: 0.5em;
+}
+.cronograma__right a {
+  color: #336699;
+  transition: all 0.15s ease;
+}
+.cronograma__right a:hover {
+  color: #469C00;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.modal button {
+  position: fixed;
+  right: 2em;
+  top: 6em;
+  width: 2em;
+  height: 2em;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.modal button:hover {
+  opacity: 0.9;
+}
+
+.accessibility-bar {
+  background-color: grey;
+  position: fixed;
+  right: 1em;
+  top: 2em;
+  height: 2em;
+  width: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.accessibility-bar img {
+  width: 1.5em;
+  height: 1.5em;
+  transition: all 0.15s ease;
+}
+.accessibility-bar img:hover {
+  opacity: 0.5;
+}
+
+.icons-container {
+  display: flex;
+  margin: 2em 0em;
+  justify-content: space-between;
+  border-bottom: 0.1em solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 3em;
+}
+.icons-container .circle {
+  width: 3.5em;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+.icons-container .label a {
+  color: #008293;
+}
+
+.icons-container .circle-label {
+  display: flex;
+  gap: 0.75em;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.icons-container .circle-label:hover {
+  animation: circlehover 2s;
+}
+
+.forms-container {
+  display: flex;
+  gap: 2em;
+}
+
+.search-container {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background-color: #707070;
+  border-radius: 0.5em;
+  padding: 2em 2em 0em 2em;
+}
+.search-container label {
+  font-size: 0.9rem;
+  color: #FFF;
+}
+.search-container input {
+  padding: 0.75em;
+  font-style: italic;
+  border: none;
+  border-radius: 0.5em;
+}
+.search-container input[type=radio] {
+  cursor: pointer;
+}
+.search-container button {
+  background-color: var(--main-color);
+  margin: 1.5em 0em 0em 0em;
+  padding: 0.75em 4em;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.search-container button:hover {
+  background-color: #469C00;
+}
+
+.radio-container {
+  margin-bottom: 1em;
+}
+
+.access-container {
+  flex: 4;
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .greeting {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .icons-container .circle-label {
+    flex-direction: column;
+  }
+  .icons-container .circle-label .label {
+    text-align: center;
+  }
+}
+@keyframes circlehover {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5em);
+  }
+}
