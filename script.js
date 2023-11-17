@@ -39,3 +39,16 @@ closeButton.addEventListener('keydown', (event) => {
 function closeModal() {
   modal.style.display = 'none';
 }
+
+ function toggleNav() {
+   const mainNav = document.querySelector('.main-nav');
+   const subNav = document.querySelector('.sub-nav');
+    
+   if (mainNav.style.display === 'block') {
+     mainNav.style.display = 'none';
+     //subNav.innerText = 'Navegación ▼';
+   } else {
+     mainNav.style.display = 'block';
+     //subNav.innerText = 'Navegación ▲';
+   }
+ }

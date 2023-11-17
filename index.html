@@ -21,6 +21,12 @@
     <img src="https://oferta.senasofiaplus.edu.co/sofia-oferta/images/logo.png" alt="Logo de Sofiaplus" aria-label="Logo de Sofiaplus">
     <img id="logomintrabajo" src="https://oferta.senasofiaplus.edu.co/sofia-oferta/images/mintrabajo.png" alt="logo ministerio del trabajo">
   
+    <nav class="sub-nav">
+      <ul>
+        <li><a href="#" aria-label="Menu despegable" onclick="toggleNav()">Navegación ▼</a></li>
+      </ul>
+    </nav>
+    
     <nav class="main-nav">
       <ul>
         <li><a href="#" aria-label="Página de inicio">Inicio</a></li>
@@ -31,11 +37,7 @@
       </ul>
     </nav>
     
-    <nav class="sub-nav">
-      <ul>
-        <li><a href="#" aria-label="Menu despegable">Navegación ▼</a></li>
-      </ul>
-    </nav>
+    
   </header>
   
   <div class="accessibility-bar">
@@ -43,7 +45,7 @@
   </div>
 <!--
   <div id="modal" class="modal" role="dialog" aria-labelledby="modal-oferta" aria-describedby="modal-contenido">
-  <button id="closeButton" onclick="closeModal()" aria-label="Cerrar modal">
+  <button id="closeButton" onclick="closeModal()" aria-label="Cerrar modal (Presiona Esc para cerrar)">
     <span aria-hidden="true">&times;</span>
   </button>
   <a href="#">
@@ -72,23 +74,23 @@
  <div class="icons-container">
   <div class="circle-label">
     <div class="circle"><img src="https://oferta.senasofiaplus.edu.co/sofia-oferta/images/tecnicas.png" alt="icono carreras presenciales"></div>
-    <div class="label"><a href="#">Carreras presenciales</a></div>
+    <div class="label" aria-label="Explora carreras presenciales"><a href="#">Carreras presenciales</a></div>
   </div>
   <div class="circle-label">
     <div class="circle"><img src="https://oferta.senasofiaplus.edu.co/sofia-oferta/images/tecnicavirtual.png" alt="icono carreras virtuales"></div>
-    <div class="label"><a href="#">Carreras virtuales</a></div>
+    <div class="label" aria-label="Explora carreras virtuales"><a href="#">Carreras virtuales</a></div>
   </div>
   <div class="circle-label">
     <div class="circle"><img src="https://oferta.senasofiaplus.edu.co/sofia-oferta/images/cursoscortos.png" alt="icono de cursos cortos presenciales"></div>
-    <div class="label"><a href="#">Cursos cortos presenciales</a></div>
+    <div class="label" aria-label="Explora cursos cortos presenciales"><a href="#">Cursos cortos presenciales</a></div>
   </div>
   <div class="circle-label">
     <div class="circle"><img src="https://oferta.senasofiaplus.edu.co/sofia-oferta/images/virtual.png" alt="icono cursos cortos virtuales"></div>
-    <div class="label"><a href="#">Cursos cortos virtuales</a></div>
+    <div class="label" aria-label="Explora cursos cortos virtuales"><a href="#">Cursos cortos virtuales</a></div>
   </div>
   <div class="circle-label">
     <div class="circle"><img src="https://oferta.senasofiaplus.edu.co/sofia-oferta/images/ingles.png" alt="icono cursos de ingles"></div>
-    <div class="label"><a href="#">Cursos de inglés</a></div>
+    <div class="label" aria-label="Explora cursos de ingles"><a href="#">Cursos de inglés</a></div>
   </div>
 </div>
   
@@ -166,7 +168,7 @@
             <div class="box--icon"><img class="key-icon" src="https://oferta.senasofiaplus.edu.co/sofia-oferta/images/ingresoico.png" alt="icono de ingreso de usuario"></div>
             <div class="box--text"><span>Ingrese</span> para acceder al sistema si ya está registrado</div>
           </div>
-        <button>Ingresar</button>
+        <button type="submit">Ingresar</button>
       </div>
     </div>
   </div>
@@ -206,7 +208,7 @@
       </div>
     </div>
     
-    <div class="faq">
+    <div class="faq" role="complementary">
       <div class="faq__text">¿Necesita más información o tiene preguntas sobre estudiar en el SENA?</div>
       <button>Resuelva sus dudas aqui</button>
     </div>
@@ -228,7 +230,7 @@
           <div><span>Horario de atencion: </span></div>
           <div>Lunes a Viernes 7:00 am a 7:00 pm</div>
           <div>Sabados 8:00 am a 1:00 pm</div>
-          <div>Todos los derechos reservados - 2006 / 2014</div>
+          <div role="contentinfo">Todos los derechos reservados - 2006 / 2014</div>
         </div>
       </div>
     </div>
